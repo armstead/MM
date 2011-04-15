@@ -10,12 +10,12 @@ using System;
 
 public class MM
 {
-	static public void Main ()
-	{
+   static public void Main ()
+   {
       bool byThree = false;
       bool byFive = false;
 
-		for (int i=1; i<=100; i++)
+      for (int i=1; i<=100; i++)
       {
          if (i%3 == 0)
             byThree = true;
@@ -23,7 +23,7 @@ public class MM
             byFive = true;
 
          if (byThree && byFive)
-		      Console.WriteLine ("ModernMedical");
+            Console.WriteLine ("ModernMedical");
          if (byThree & !byFive)
             Console.WriteLine ("Modern");
          if (byFive & !byThree)
@@ -34,6 +34,5 @@ public class MM
          byThree = false;
          byFive = false;
       }
-	}
- 
+   }
 }
